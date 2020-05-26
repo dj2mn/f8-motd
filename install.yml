@@ -1,3 +1,5 @@
 ---
 - hosts: all
-  include_tasks: tasks/main.yml
+  tasks:
+    - name: Run role tasks/main.yml
+      import_tasks: tasks/main.yml
